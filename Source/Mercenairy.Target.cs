@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 public class MercenairyTarget : TargetRules
 {
-	public MercenairyTarget(TargetInfo Target) : base(Target)
+	public MercenairyTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.Add("Mercenairy");
+		ExtraModuleNames.AddRange( new string[] { "Mercenairy" } );
 	}
 }
